@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "./Button";
+import Button from "../component/Button";
 
 const pets = ["hewan1", "hewan2", "Hewan3", "Hewan4"];
 
@@ -19,7 +19,7 @@ const Loop = () => {
         placeholder="Input New Pet"
       />
       {myPets.map((pet) => (
-        <div>{pet}</div>
+        <div key={pet}>{pet}</div>
       ))}
       <Button onclick={addNewPet}>Add New Pet</Button>
     </div>
