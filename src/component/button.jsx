@@ -1,6 +1,6 @@
 // const Button = (props) =>{
-const Button = ({children}) =>{
-    return <button style={{
+const Button = ({children, onclick}) =>{
+    return <button onClick={onclick} style={{
         padding: "5px, 10px",
         borderRadius: "5px",
         fontSize: "18px",

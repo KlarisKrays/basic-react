@@ -1,27 +1,8 @@
-import { useState } from 'react'
-import Button from './component/button'
+import Counter from "./component/counter";
+import Loop from "./component/Loop";
 
 function App() {
-
-  const [count, setCount] = useState(0)
-
-  const increament = () => {
-    setCount(count + 1)
-  }
-
-  const decreament = () => {
-    setCount(count - 1)
-  }
-
-  return (
-    <div>
-      {/* <button onClick={increament}>Add</button> */}
-      <Button>Add Counter</Button>
-      {count}
-      <Button>Min Counter</Button>
-      {/* <button onClick={decreament}>Min</button> */}
-    </div>
-  )
+  return <Loop />;
 }
 
-export default App
+export default App;
